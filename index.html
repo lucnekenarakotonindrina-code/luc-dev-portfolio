@@ -5,28 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0b1020">
   <meta name="description" content="Portfolio de RAKOTONINDRINA Luc nekena — développeur web, infographiste et freelance LUC-DEV à Madagascar.">
-  <title>RAKOTONINDRINA Luc nekena | LUC-DEV</title>
+  <title>RAKOTONINDRINA Luc nekena | Accueil LUC-DEV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="topbar">
-    <a class="brand" href="#accueil" aria-label="Accueil LUC-DEV"><span class="brand-logo" aria-hidden="true">L.</span><span class="brand-wordmark">LUC<span class="brand-accent">-DEV</span></span></a>
+    <a class="brand" href="index.html" aria-label="Accueil LUC-DEV"><img class="brand-logo" src="assets/luc-dev-logo.png" alt="Logo LUC-DEV"><span class="brand-wordmark">LUC<span class="brand-accent">-DEV</span></span></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav id="mainNav">
-      <a href="#accueil" class="nav-link active">Accueil</a>
-      <a href="#travaux" class="nav-link">Mes travaux</a>\n      <a href="#expertises" class="nav-link">Expertises</a>
-      <a href="#apropos" class="nav-link">À propos</a>
-      <a href="#cv" class="nav-link">Mon CV</a>
-      <a href="#historique" class="nav-link">Historique</a>
-      <a href="#contact" class="nav-link nav-contact">Contact <span>↗</span></a>
+      <a href="index.html" class="nav-link active" aria-current="page">Accueil</a>
+      <a href="travaux.html" class="nav-link">Mes travaux</a>
+      <a href="apropos.html" class="nav-link">À propos</a>
+      <a href="cv.html" class="nav-link">Mon CV</a>
+      <a href="historique.html" class="nav-link">Historique</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      <a href="https://www.facebook.com/profile.php?id=100060708171012" class="nav-link" target="_blank" rel="noopener noreferrer">Facebook</a>
     </nav>
   </header>
-
-  <main>
+  <main class="page-main">
     <section class="hero section" id="accueil">
       <div class="hero-copy">
         <div class="eyebrow"><span class="status-dot"></span> Disponible pour des projets freelance</div>
@@ -42,7 +42,7 @@
       </div>
       <div class="hero-visual">
         <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
-        <div class="portrait-frame profile-visual" aria-label="Identité visuelle LUC-DEV"><span class="profile-visual-orbit"></span><strong>L.</strong><small>BUILD • SECURE • DEPLOY</small><span class="portrait-caption">RAKOTONINDRINA Luc nekena</span></div>
+        <div class="portrait-frame"><img src="assets/luc-profile.png" alt="Photo de profil de RAKOTONINDRINA Luc nekena"><span class="portrait-caption">RAKOTONINDRINA Luc nekena</span></div>
         <div class="profile-card">
           <div class="profile-top"><span class="tiny-label">PORTFOLIO / 2026</span><span class="online-indicator">● EN LIGNE</span></div>
           <div class="monogram">L<span>.</span></div>
@@ -57,108 +57,9 @@
       </div>
       <a class="scroll-cue" href="#travaux"><span></span> DÉFILER POUR EXPLORER</a>
     </section>
-
-    <section class="section work-section" id="travaux">
-      <div class="section-heading">
-        <div><p class="eyebrow">CE QUE JE PROPOSE</p><h2>Mes services <span class="gradient-text">&amp; travaux.</span></h2></div>
-        <p class="section-intro">De la création de sites vitrines à la conception d’applications, avec une attention particulière à la sécurité, aux performances et à l’expérience utilisateur.</p>
-      </div>
-      <div class="service-grid">
-        <article class="service-card">
-          <div class="service-icon">∞</div><span class="card-number">01 / DEVOPS</span>
-          <h3>DevOps &amp; déploiement</h3><p>Accompagnement du cycle de vie des applications : automatisation des tâches, intégration et déploiement continus, gestion des environnements et fiabilisation des mises en production.</p>
-          <div class="tags"><span>Linux</span><span>Git</span><span>CI / CD</span><span>Déploiement</span></div>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">&lt;/&gt;</div><span class="card-number">02 / WEB</span>
-          <h3>Développement web</h3><p>Création de sites vitrines, portfolios et applications web avec des interfaces claires, responsives et faciles à utiliser.</p>
-          <div class="tags"><span>HTML / CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span></div>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">✳</div><span class="card-number">03 / DESIGN</span>
-          <h3>Infographie &amp; PAO</h3><p>Conception de visuels de communication : affiches, flyers, publications pour réseaux sociaux et identité graphique.</p>
-          <div class="tags"><span>Création visuelle</span><span>Mise en page</span><span>Communication</span></div>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">W</div><span class="card-number">04 / WORDPRESS</span>
-          <h3>Sites WordPress</h3><p>Création et personnalisation de sites WordPress : pages professionnelles, présentation d’activité, blog et gestion de contenu.</p>
-          <div class="tags"><span>WordPress</span><span>Thèmes</span><span>Responsive</span><span>SEO de base</span></div>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">▣</div><span class="card-number">05 / APPLICATIONS</span>
-          <h3>Applications web &amp; mobiles</h3><p>Conception d’interfaces et de fonctionnalités pour des applications web et des projets mobiles adaptés aux besoins du client.</p>
-          <div class="tags"><span>React</span><span>JavaScript</span><span>API REST</span><span>Mobile</span></div>
-        </article>
-        <article class="service-card">
-          <div class="service-icon">⌑</div><span class="card-number">06 / CYBERSECURITY</span>
-          <h3>Cybersécurité &amp; réseaux</h3><p>Sensibilisation aux bonnes pratiques : sécurisation des comptes, mises à jour, sauvegardes, protection des données et notions de sécurité réseau.</p>
-          <div class="tags"><span>Security awareness</span><span>Linux</span><span>Réseaux</span><span>DHCP / DNS</span></div>
-        </article>
-      </div>
-
-      <div class="project-heading"><p class="eyebrow">PROJET À DÉCOUVRIR</p><h3>Quelques réalisations &amp; expériences</h3></div>
-      <article class="project-card">
-        <div class="project-art">
-          <div class="browser-bar"><i></i><i></i><i></i><span>luc-dev / projet</span></div>
-          <div class="dashboard-art"><aside><b>L.</b><span></span><span></span><span></span><span></span></aside><div class="dash-main"><small>TABLEAU DE BORD</small><b>Gestion de stagiaires</b><div class="dash-widgets"><i></i><i></i><i></i></div><div class="dash-lines"></div></div></div>
-        </div>
-        <div class="project-info"><span class="project-type">PROJET ACADÉMIQUE · APPLICATION WEB</span><h4>Plateforme de gestion de stagiaires</h4><p>Conception d'une plateforme web pour faciliter le suivi des stagiaires : gestion des profils, présences, notes, projets et attestations.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>MySQL</span></div><span class="project-note">Projet réalisé dans le cadre de ma formation en informatique.</span></div>
-      </article>
- 
-      <section class="expertise-gallery" id="expertises">
-        <div class="project-heading"><p class="eyebrow">TECHNOLOGIES &amp; UNIVERS</p><h3>Développement, DevOps &amp; cybersécurité.</h3><p class="gallery-intro">Quelques visuels qui illustrent les domaines que j’explore et les services proposés par LUC-DEV.</p></div>
-        <div class="visual-grid">
-          <article class="visual-card reveal"><div class="visual-image"><img src="assets/cyber-operations.jpg" alt="Poste de travail en cybersécurité"><span class="image-label">CYBERSECURITY</span></div><div class="visual-caption"><h4>Surveillance &amp; sécurité</h4><p>Analyse, vigilance et protection des environnements numériques.</p><div class="tags"><span>Monitoring</span><span>Security</span><span>Risk awareness</span></div></div></article>
-          <article class="visual-card reveal"><div class="visual-image"><img src="assets/cyber-security.jpg" alt="Illustration de cybersécurité"><span class="image-label">CYBER DEFENSE</span></div><div class="visual-caption"><h4>Protection des systèmes</h4><p>Bonnes pratiques pour réduire les risques et protéger les données.</p><div class="tags"><span>Protection</span><span>Antivirus</span><span>Access control</span></div></div></article>
-          <article class="visual-card reveal"><div class="visual-image"><img src="assets/security-lock.jpg" alt="Cadenas numérique sur un clavier"><span class="image-label">DATA SECURITY</span></div><div class="visual-caption"><h4>Sécurité des données</h4><p>Confidentialité, sauvegarde et gestion responsable des accès.</p><div class="tags"><span>Privacy</span><span>Backup</span><span>Passwords</span></div></div></article>
-          <article class="visual-card reveal"><div class="visual-image"><img src="assets/network-protection.jpg" alt="Réseau numérique protégé"><span class="image-label">NETWORK SECURITY</span></div><div class="visual-caption"><h4>Réseaux &amp; infrastructure</h4><p>Découverte des réseaux, services et mécanismes de protection.</p><div class="tags"><span>TCP/IP</span><span>DHCP</span><span>DNS</span></div></div></article>
-          <article class="visual-card reveal"><div class="visual-image"><img src="assets/developer-workstation.jpg" alt="Ordinateur de développement web"><span class="image-label">WEB DEVELOPMENT</span></div><div class="visual-caption"><h4>Création de sites web</h4><p>Sites vitrines modernes, responsives et adaptés aux mobiles.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
-          <article class="visual-card reveal"><div class="visual-image"><img src="assets/web-coding.jpg" alt="Développeur travaillant sur du code"><span class="image-label">DEVOPS &amp; CODE</span></div><div class="visual-caption"><h4>DevOps &amp; applications</h4><p>Code, versionnement, automatisation et déploiement progressif.</p><div class="tags"><span>Git</span><span>Linux</span><span>CI / CD</span></div></div></article>
-          <article class="visual-card reveal"><div class="visual-image"><img src="assets/web-development-board.jpg" alt="Tableau illustrant le développement web"><span class="image-label">WORDPRESS &amp; WEB</span></div><div class="visual-caption"><h4>WordPress &amp; présence en ligne</h4><p>Des sites de présentation pour valoriser une activité ou un service.</p><div class="tags"><span>WordPress</span><span>CMS</span><span>SEO</span></div></div></article>
-        </div>
-      </section>
-      <p class="small-note">Les exemples ci-dessus présentent mes domaines de travail et un projet de formation. D'autres réalisations pourront être ajoutées au fil de mon parcours.</p>
-    </section>
-
-    <section class="section about-section" id="apropos">
-      <div class="about-left"><p class="eyebrow">QUI SUIS-JE ?</p><h2>À propos <span class="gradient-text">de moi.</span></h2><div class="about-mark">L<span>.</span></div></div>
-      <div class="about-content"><p class="about-lead">Je suis <strong>RAKOTONINDRINA Luc nekena</strong>, passionné par l'informatique, le développement web et la création graphique.</p><p>Mon objectif est de proposer des solutions numériques simples, modernes et efficaces. J'aime apprendre, relever de nouveaux défis et mettre mes compétences au service des particuliers, entrepreneurs et entreprises.</p><p>À travers <strong>LUC-DEV</strong>, je propose la création de sites vitrines, de sites WordPress et d’applications web ou mobiles, tout en développant mes compétences en DevOps, cybersécurité et création graphique.</p>
-        <div class="values"><div><b>01</b><span>Créativité</span></div><div><b>02</b><span>Rigueur</span></div><div><b>03</b><span>Apprentissage</span></div></div>
-      </div>
-    </section>
-
-    <section class="section cv-section" id="cv">
-      <div class="section-heading"><div><p class="eyebrow">PARCOURS &amp; COMPÉTENCES</p><h2>Mon CV <span class="gradient-text">en bref.</span></h2></div><p class="section-intro">Une formation en informatique, une expérience en entreprise et une volonté constante de progresser.</p></div>
-      <div class="cv-grid">
-        <div class="cv-panel"><span class="panel-label">FORMATION</span><div class="timeline-item"><span class="timeline-date">2026</span><div><h3>DTS en Informatique</h3><p>Université Saint Vincent de Paul Akamasoa</p></div></div><div class="timeline-item"><span class="timeline-date">2024</span><div><h3>Baccalauréat</h3><p>Diplôme obtenu</p></div></div></div>
-        <div class="cv-panel"><span class="panel-label">COMPÉTENCES</span><div class="skill"><div><span>DevOps</span><b>Linux · Git · CI / CD · Déploiement</b></div><div class="skill-track"><i style="width:82%"></i></div></div><div class="skill"><div><span>Infographie &amp; PAO</span><b>Création · Mise en page</b></div><div class="skill-track"><i style="width:78%"></i></div></div><div class="skill"><div><span>Réseaux &amp; systèmes</span><b>Maintenance · DHCP · DNS</b></div><div class="skill-track"><i style="width:68%"></i></div></div><p class="skill-disclaimer">Niveaux indicatifs, à ajuster selon vos compétences réelles.</p></div>
-      </div>
-      <div class="cv-footer"><div><b>Besoin de mon CV complet ?</b><span>Contactez-moi pour recevoir mon CV détaillé.</span></div><a class="button button-primary" href="mailto:lucnekenarakotonindrina@gmail.com?subject=Demande%20de%20CV">Demander mon CV <span>↗</span></a></div>
-    </section>
-
-    <section class="section history-section" id="historique">
-      <div class="section-heading"><div><p class="eyebrow">MON EXPÉRIENCE</p><h2>Mon historique <span class="gradient-text">professionnel.</span></h2></div><p class="section-intro">Les étapes qui construisent mon expérience et mon identité professionnelle.</p></div>
-      <div class="history-list">
-        <article class="history-item"><div class="history-date">EXPÉRIENCE</div><div class="history-marker"></div><div><h3>Tanaworks — Infographie &amp; PAO</h3><p class="history-duration">Stage / expérience de 6 mois</p><p>Participation à des activités d'infographie et de publication assistée par ordinateur dans le secteur de l'impression et de la communication visuelle.</p></div></article>
-        <article class="history-item"><div class="history-date">FORMATION</div><div class="history-marker"></div><div><h3>Université Saint Vincent de Paul Akamasoa</h3><p class="history-duration">Parcours en informatique · DTS 2026</p><p>Développement de compétences en informatique, programmation web, bases de données et administration réseau.</p></div></article>
-        <article class="history-item"><div class="history-date">AUJOURD'HUI</div><div class="history-marker"></div><div><h3>Lancement de LUC-DEV</h3><p class="history-duration">Activité freelance</p><p>Développement de projets numériques : sites web, applications, bonnes pratiques DevOps et sensibilisation à la cybersécurité.</p></div></article>
-      </div>
-    </section>
-
-    <section class="section contact-section" id="contact">
-      <div class="contact-panel"><div class="contact-copy"><p class="eyebrow">PARLONS DE VOTRE PROJET</p><h2>Une idée en tête ?<br><span class="gradient-text">Créons-la ensemble.</span></h2><p>Vous avez besoin d'un site web, d'un visuel ou d'un service informatique ? Écrivez-moi. Je serai heureux d'échanger avec vous.</p><a class="button button-primary" href="https://wa.me/261384491172" target="_blank" rel="noopener">Discuter sur WhatsApp <span>↗</span></a></div>
-        <div class="contact-details">
-          <a class="contact-line" href="mailto:lucnekenarakotonindrina@gmail.com"><span class="contact-icon">✉</span><span><small>EMAIL</small><b>lucnekenarakotonindrina@gmail.com</b></span><span class="arrow">↗</span></a>
-          <a class="contact-line" href="tel:+261384491172"><span class="contact-icon">☎</span><span><small>TÉLÉPHONE</small><b>038 44 911 72</b></span><span class="arrow">↗</span></a>
-          <a class="contact-line" href="https://wa.me/261384491172" target="_blank" rel="noopener"><span class="contact-icon">◉</span><span><small>WHATSAPP</small><b>038 44 911 72</b></span><span class="arrow">↗</span></a>
-          <a class="contact-line" href="https://www.facebook.com/Luc-dev" target="_blank" rel="noopener"><span class="contact-icon">f</span><span><small>FACEBOOK</small><b>Luc-dev</b></span><span class="arrow">↗</span></a>
-        </div>
-      </div>
-      <form class="message-form" id="contactForm"><div><p class="eyebrow">MESSAGE RAPIDE</p><h3>Envoyez-moi un message</h3></div><label>Votre nom<input name="name" required placeholder="Votre nom"></label><label>Votre adresse e-mail<input name="email" type="email" required placeholder="exemple@email.com"></label><label>Votre message<textarea name="message" rows="4" required placeholder="Parlez-moi de votre projet..."></textarea></label><button class="button button-primary" type="submit">Préparer mon e-mail <span>↗</span></button><p class="form-hint" id="formHint">Le bouton ouvrira votre application e-mail avec le message prérempli.</p></form>
-    </section>
   </main>
-
-  <footer class="footer"><a class="brand" href="#accueil"><span class="brand-logo" aria-hidden="true">L.</span><span class="brand-wordmark">LUC<span class="brand-accent">-DEV</span></span></a><p>© <span id="year"></span> RAKOTONINDRINA Luc nekena. Tous droits réservés.</p><a href="#accueil" class="back-top">RETOUR EN HAUT ↑</a></footer>
+  <footer class="footer"><a class="brand" href="index.html"><img class="brand-logo" src="assets/luc-dev-logo.png" alt="Logo LUC-DEV"><span class="brand-wordmark">LUC<span class="brand-accent">-DEV</span></span></a><p>© <span id="year"></span> RAKOTONINDRINA Luc nekena. Tous droits réservés.</p><a href="index.html" class="back-top">RETOUR EN HAUT ↑</a></footer>
   <script src="script.js"></script>
+
 </body>
 </html>

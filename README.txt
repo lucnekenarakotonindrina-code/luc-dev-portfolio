@@ -31,3 +31,22 @@ TESTER LE SITE
 - Les compétences et services affichés doivent correspondre à ce que vous pouvez
   réellement proposer. Les mentions de cybersécurité sont formulées comme
   sensibilisation et bonnes pratiques, pas comme un audit certifié.
+
+
+MISE À JOUR DES ÉLÉMENTS PERSONNELS
+- Logo officiel : assets/luc-dev-logo.png
+- Photo de profil : assets/luc-profile.png
+- Profil Facebook : https://www.facebook.com/profile.php?id=100060708171012
+Le lien Facebook est présent dans la navigation et dans la zone de contact.
+
+
+STRUCTURE MULTIPAGE
+- index.html : page Accueil
+- travaux.html : Mes travaux et expertises
+- apropos.html : À propos
+- cv.html : Mon CV
+- historique.html : Historique professionnel
+- contact.html : Contact
+Chaque lien du menu ouvre maintenant une page HTML distincte.
+Pour publier le site, téléversez tous les fichiers HTML, style.css, script.js
+et le dossier assets/ à la racine du dépôt GitHub.
