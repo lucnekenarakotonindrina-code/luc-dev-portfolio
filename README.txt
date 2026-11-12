@@ -1,19 +1,33 @@
-LUC-DEV — Portfolio personnel
-=============================
+LUC-DEV — Portfolio personnel (version enrichie)
+================================================
 
-Fichiers :
-- index.html : contenu du site
-- style.css  : design responsive
-- script.js  : menu mobile, année automatique et formulaire e-mail
+CONTENU
+- index.html : structure et textes du portfolio
+- style.css  : design responsive, effets visuels et animations
+- script.js  : menu mobile, année automatique, animations au scroll,
+               effet de profondeur au survol et formulaire e-mail
+- assets/    : images cybersécurité / développement web et vidéo DevOps
 
-Pour tester :
-1. Décompressez le dossier.
-2. Ouvrez index.html dans un navigateur.
-3. Pour publier, téléversez les 3 fichiers (index.html, style.css, script.js) à la racine de votre hébergement.
+NOUVEAUTÉS
+- Présentation enrichie : cybersécurité, DevOps et développement web
+- Services : sites vitrines, WordPress, applications web et mobiles,
+  infographie / PAO, notions de sécurité et réseaux
+- Galerie de 7 visuels avec animations d'apparition, zoom et effet 3D léger
+- Vidéo locale « Docker vs Kubernetes »
+- Logo typographique L. et visuel de profil intégrés en CSS : aucun fichier
+  de logo ou de portrait externe n'est nécessaire.
+- Adaptation mobile et prise en compte de l'option « réduire les animations ».
 
-À personnaliser avant publication :
-- Vérifier le lien Facebook https://www.facebook.com/Luc-dev (remplacez-le par l'URL exacte de votre page si nécessaire).
-- Ajouter votre photo professionnelle et, si vous le souhaitez, un fichier CV PDF.
-- Vérifier les descriptions de formation, expériences et compétences pour qu'elles correspondent exactement à votre CV.
+TESTER LE SITE
+1. Décompressez le ZIP.
+2. Ouvrez index.html dans un navigateur récent.
+3. Pour publier, envoyez le contenu du dossier à la racine de votre hébergement.
+   Conservez impérativement le dossier assets/ avec le site.
 
-Le formulaire de contact ouvre l'application e-mail du visiteur (il ne stocke pas les messages sur un serveur).
+À VÉRIFIER AVANT PUBLICATION
+- Vérifier l'adresse de la page Facebook dans index.html.
+- Les visuels sont des illustrations de domaines, pas des preuves de projets clients.
+- Le formulaire ouvre l'application e-mail du visiteur ; il ne stocke pas les messages.
+- Les compétences et services affichés doivent correspondre à ce que vous pouvez
+  réellement proposer. Les mentions de cybersécurité sont formulées comme
+  sensibilisation et bonnes pratiques, pas comme un audit certifié.
