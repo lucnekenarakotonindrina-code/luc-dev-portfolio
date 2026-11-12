@@ -14,11 +14,11 @@
 <body>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
   <header class="topbar">
-    <a class="brand" href="#accueil" aria-label="Accueil LUC-DEV"><img class="brand-logo" src="assets/luc-dev-logo.png" alt="Logo LUC-DEV"><span class="brand-wordmark">LUC<span class="brand-accent">-DEV</span></span></a>
+    <a class="brand" href="#accueil" aria-label="Accueil LUC-DEV"><span class="brand-logo" aria-hidden="true">L.</span><span class="brand-wordmark">LUC<span class="brand-accent">-DEV</span></span></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span><span></span></button>
     <nav id="mainNav">
       <a href="#accueil" class="nav-link active">Accueil</a>
-      <a href="#travaux" class="nav-link">Mes travaux</a>
+      <a href="#travaux" class="nav-link">Mes travaux</a>\n      <a href="#expertises" class="nav-link">Expertises</a>
       <a href="#apropos" class="nav-link">À propos</a>
       <a href="#cv" class="nav-link">Mon CV</a>
       <a href="#historique" class="nav-link">Historique</a>
@@ -32,8 +32,8 @@
         <div class="eyebrow"><span class="status-dot"></span> Disponible pour des projets freelance</div>
         <p class="hero-kicker">BONJOUR, JE SUIS</p>
         <h1>RAKOTONINDRINA<br><span class="gradient-text">Luc nekena.</span></h1>
-        <h2>DevOps <span>·</span> Développement web <span>·</span> Freelance</h2>
-        <p class="hero-description">J’accompagne vos projets numériques avec une approche DevOps : automatisation, intégration et déploiement continus, gestion des environnements et développement web.</p>
+        <h2>DevOps <span>·</span> Cybersécurité <span>·</span> Développement web</h2>
+        <p class="hero-description">Je conçois des expériences numériques modernes : sites vitrines, WordPress, applications web et mobiles. J’intègre aussi les bonnes pratiques DevOps et de cybersécurité pour des projets mieux structurés et plus fiables.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#travaux">Découvrir mes travaux <span>↗</span></a>
           <a class="button button-ghost" href="#contact">Me contacter</a>
@@ -42,7 +42,7 @@
       </div>
       <div class="hero-visual">
         <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
-        <div class="portrait-frame"><img src="assets/luc-profile.png" alt="Portrait professionnel de RAKOTONINDRINA Luc nekena"><span class="portrait-caption">RAKOTONINDRINA Luc nekena</span></div>
+        <div class="portrait-frame profile-visual" aria-label="Identité visuelle LUC-DEV"><span class="profile-visual-orbit"></span><strong>L.</strong><small>BUILD • SECURE • DEPLOY</small><span class="portrait-caption">RAKOTONINDRINA Luc nekena</span></div>
         <div class="profile-card">
           <div class="profile-top"><span class="tiny-label">PORTFOLIO / 2026</span><span class="online-indicator">● EN LIGNE</span></div>
           <div class="monogram">L<span>.</span></div>
@@ -61,7 +61,7 @@
     <section class="section work-section" id="travaux">
       <div class="section-heading">
         <div><p class="eyebrow">CE QUE JE PROPOSE</p><h2>Mes services <span class="gradient-text">&amp; travaux.</span></h2></div>
-        <p class="section-intro">Mon activité freelance est orientée DevOps : fiabiliser, automatiser et simplifier le cycle de vie de vos applications, de la préparation au déploiement.</p>
+        <p class="section-intro">De la création de sites vitrines à la conception d’applications, avec une attention particulière à la sécurité, aux performances et à l’expérience utilisateur.</p>
       </div>
       <div class="service-grid">
         <article class="service-card">
@@ -79,6 +79,21 @@
           <h3>Infographie &amp; PAO</h3><p>Conception de visuels de communication : affiches, flyers, publications pour réseaux sociaux et identité graphique.</p>
           <div class="tags"><span>Création visuelle</span><span>Mise en page</span><span>Communication</span></div>
         </article>
+        <article class="service-card">
+          <div class="service-icon">W</div><span class="card-number">04 / WORDPRESS</span>
+          <h3>Sites WordPress</h3><p>Création et personnalisation de sites WordPress : pages professionnelles, présentation d’activité, blog et gestion de contenu.</p>
+          <div class="tags"><span>WordPress</span><span>Thèmes</span><span>Responsive</span><span>SEO de base</span></div>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">▣</div><span class="card-number">05 / APPLICATIONS</span>
+          <h3>Applications web &amp; mobiles</h3><p>Conception d’interfaces et de fonctionnalités pour des applications web et des projets mobiles adaptés aux besoins du client.</p>
+          <div class="tags"><span>React</span><span>JavaScript</span><span>API REST</span><span>Mobile</span></div>
+        </article>
+        <article class="service-card">
+          <div class="service-icon">⌑</div><span class="card-number">06 / CYBERSECURITY</span>
+          <h3>Cybersécurité &amp; réseaux</h3><p>Sensibilisation aux bonnes pratiques : sécurisation des comptes, mises à jour, sauvegardes, protection des données et notions de sécurité réseau.</p>
+          <div class="tags"><span>Security awareness</span><span>Linux</span><span>Réseaux</span><span>DHCP / DNS</span></div>
+        </article>
       </div>
 
       <div class="project-heading"><p class="eyebrow">PROJET À DÉCOUVRIR</p><h3>Quelques réalisations &amp; expériences</h3></div>
@@ -89,12 +104,25 @@
         </div>
         <div class="project-info"><span class="project-type">PROJET ACADÉMIQUE · APPLICATION WEB</span><h4>Plateforme de gestion de stagiaires</h4><p>Conception d'une plateforme web pour faciliter le suivi des stagiaires : gestion des profils, présences, notes, projets et attestations.</p><div class="tags"><span>React</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>MySQL</span></div><span class="project-note">Projet réalisé dans le cadre de ma formation en informatique.</span></div>
       </article>
+ 
+      <section class="expertise-gallery" id="expertises">
+        <div class="project-heading"><p class="eyebrow">TECHNOLOGIES &amp; UNIVERS</p><h3>Développement, DevOps &amp; cybersécurité.</h3><p class="gallery-intro">Quelques visuels qui illustrent les domaines que j’explore et les services proposés par LUC-DEV.</p></div>
+        <div class="visual-grid">
+          <article class="visual-card reveal"><div class="visual-image"><img src="assets/cyber-operations.jpg" alt="Poste de travail en cybersécurité"><span class="image-label">CYBERSECURITY</span></div><div class="visual-caption"><h4>Surveillance &amp; sécurité</h4><p>Analyse, vigilance et protection des environnements numériques.</p><div class="tags"><span>Monitoring</span><span>Security</span><span>Risk awareness</span></div></div></article>
+          <article class="visual-card reveal"><div class="visual-image"><img src="assets/cyber-security.jpg" alt="Illustration de cybersécurité"><span class="image-label">CYBER DEFENSE</span></div><div class="visual-caption"><h4>Protection des systèmes</h4><p>Bonnes pratiques pour réduire les risques et protéger les données.</p><div class="tags"><span>Protection</span><span>Antivirus</span><span>Access control</span></div></div></article>
+          <article class="visual-card reveal"><div class="visual-image"><img src="assets/security-lock.jpg" alt="Cadenas numérique sur un clavier"><span class="image-label">DATA SECURITY</span></div><div class="visual-caption"><h4>Sécurité des données</h4><p>Confidentialité, sauvegarde et gestion responsable des accès.</p><div class="tags"><span>Privacy</span><span>Backup</span><span>Passwords</span></div></div></article>
+          <article class="visual-card reveal"><div class="visual-image"><img src="assets/network-protection.jpg" alt="Réseau numérique protégé"><span class="image-label">NETWORK SECURITY</span></div><div class="visual-caption"><h4>Réseaux &amp; infrastructure</h4><p>Découverte des réseaux, services et mécanismes de protection.</p><div class="tags"><span>TCP/IP</span><span>DHCP</span><span>DNS</span></div></div></article>
+          <article class="visual-card reveal"><div class="visual-image"><img src="assets/developer-workstation.jpg" alt="Ordinateur de développement web"><span class="image-label">WEB DEVELOPMENT</span></div><div class="visual-caption"><h4>Création de sites web</h4><p>Sites vitrines modernes, responsives et adaptés aux mobiles.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article>
+          <article class="visual-card reveal"><div class="visual-image"><img src="assets/web-coding.jpg" alt="Développeur travaillant sur du code"><span class="image-label">DEVOPS &amp; CODE</span></div><div class="visual-caption"><h4>DevOps &amp; applications</h4><p>Code, versionnement, automatisation et déploiement progressif.</p><div class="tags"><span>Git</span><span>Linux</span><span>CI / CD</span></div></div></article>
+          <article class="visual-card reveal"><div class="visual-image"><img src="assets/web-development-board.jpg" alt="Tableau illustrant le développement web"><span class="image-label">WORDPRESS &amp; WEB</span></div><div class="visual-caption"><h4>WordPress &amp; présence en ligne</h4><p>Des sites de présentation pour valoriser une activité ou un service.</p><div class="tags"><span>WordPress</span><span>CMS</span><span>SEO</span></div></div></article>
+        </div>
+      </section>
       <p class="small-note">Les exemples ci-dessus présentent mes domaines de travail et un projet de formation. D'autres réalisations pourront être ajoutées au fil de mon parcours.</p>
     </section>
 
     <section class="section about-section" id="apropos">
       <div class="about-left"><p class="eyebrow">QUI SUIS-JE ?</p><h2>À propos <span class="gradient-text">de moi.</span></h2><div class="about-mark">L<span>.</span></div></div>
-      <div class="about-content"><p class="about-lead">Je suis <strong>RAKOTONINDRINA Luc nekena</strong>, passionné par l'informatique, le développement web et la création graphique.</p><p>Mon objectif est de proposer des solutions numériques simples, modernes et efficaces. J'aime apprendre, relever de nouveaux défis et mettre mes compétences au service des particuliers, entrepreneurs et entreprises.</p><p>À travers <strong>LUC-DEV</strong>, mon activité freelance est principalement orientée DevOps, avec des compétences complémentaires en développement web et en création graphique.</p>
+      <div class="about-content"><p class="about-lead">Je suis <strong>RAKOTONINDRINA Luc nekena</strong>, passionné par l'informatique, le développement web et la création graphique.</p><p>Mon objectif est de proposer des solutions numériques simples, modernes et efficaces. J'aime apprendre, relever de nouveaux défis et mettre mes compétences au service des particuliers, entrepreneurs et entreprises.</p><p>À travers <strong>LUC-DEV</strong>, je propose la création de sites vitrines, de sites WordPress et d’applications web ou mobiles, tout en développant mes compétences en DevOps, cybersécurité et création graphique.</p>
         <div class="values"><div><b>01</b><span>Créativité</span></div><div><b>02</b><span>Rigueur</span></div><div><b>03</b><span>Apprentissage</span></div></div>
       </div>
     </section>
@@ -113,7 +141,7 @@
       <div class="history-list">
         <article class="history-item"><div class="history-date">EXPÉRIENCE</div><div class="history-marker"></div><div><h3>Tanaworks — Infographie &amp; PAO</h3><p class="history-duration">Stage / expérience de 6 mois</p><p>Participation à des activités d'infographie et de publication assistée par ordinateur dans le secteur de l'impression et de la communication visuelle.</p></div></article>
         <article class="history-item"><div class="history-date">FORMATION</div><div class="history-marker"></div><div><h3>Université Saint Vincent de Paul Akamasoa</h3><p class="history-duration">Parcours en informatique · DTS 2026</p><p>Développement de compétences en informatique, programmation web, bases de données et administration réseau.</p></div></article>
-        <article class="history-item"><div class="history-date">AUJOURD'HUI</div><div class="history-marker"></div><div><h3>Lancement de LUC-DEV</h3><p class="history-duration">Activité freelance</p><p>Accompagnement de projets numériques avec une orientation DevOps : automatisation, intégration et déploiement des applications.</p></div></article>
+        <article class="history-item"><div class="history-date">AUJOURD'HUI</div><div class="history-marker"></div><div><h3>Lancement de LUC-DEV</h3><p class="history-duration">Activité freelance</p><p>Développement de projets numériques : sites web, applications, bonnes pratiques DevOps et sensibilisation à la cybersécurité.</p></div></article>
       </div>
     </section>
 
@@ -130,7 +158,7 @@
     </section>
   </main>
 
-  <footer class="footer"><a class="brand" href="#accueil"><img class="brand-logo" src="assets/luc-dev-logo.png" alt="Logo LUC-DEV"><span class="brand-wordmark">LUC<span class="brand-accent">-DEV</span></span></a><p>© <span id="year"></span> RAKOTONINDRINA Luc nekena. Tous droits réservés.</p><a href="#accueil" class="back-top">RETOUR EN HAUT ↑</a></footer>
+  <footer class="footer"><a class="brand" href="#accueil"><span class="brand-logo" aria-hidden="true">L.</span><span class="brand-wordmark">LUC<span class="brand-accent">-DEV</span></span></a><p>© <span id="year"></span> RAKOTONINDRINA Luc nekena. Tous droits réservés.</p><a href="#accueil" class="back-top">RETOUR EN HAUT ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
