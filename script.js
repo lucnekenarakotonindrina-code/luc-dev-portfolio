@@ -1,71 +1,14 @@
-const menuToggle = document.getElementById("menuToggle");
-const nav = document.getElementById("mainNav");
-
-if (menuToggle && nav) {
-  menuToggle.addEventListener("click", () => {
-    const opened = nav.classList.toggle("open");
-    menuToggle.setAttribute("aria-expanded", String(opened));
-  });
-  document.querySelectorAll(".nav-link").forEach(link => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      menuToggle.setAttribute("aria-expanded", "false");
-      document.querySelectorAll(".nav-link").forEach(item => item.classList.remove("active"));
-      link.classList.add("active");
-    });
-  });
-}
-
-const year = document.getElementById("year");
-if (year) year.textContent = new Date().getFullYear();
-
-// Apparition progressive des cartes et images pendant le défilement.
-const revealItems = document.querySelectorAll(".reveal");
-if ("IntersectionObserver" in window) {
-  const revealObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.14 });
-  revealItems.forEach((item, index) => {
-    item.style.transitionDelay = `${(index % 3) * 90}ms`;
-    revealObserver.observe(item);
-  });
-} else {
-  revealItems.forEach(item => item.classList.add("is-visible"));
-}
-
-// Léger effet de profondeur au survol des visuels (désactivé sur écran tactile).
-const finePointer = window.matchMedia("(pointer: fine)").matches;
-if (finePointer) {
-  document.querySelectorAll(".visual-card").forEach(card => {
-    card.addEventListener("mousemove", event => {
-      const rect = card.getBoundingClientRect();
-      const x = (event.clientX - rect.left) / rect.width - 0.5;
-      const y = (event.clientY - rect.top) / rect.height - 0.5;
-      card.style.transform = `perspective(900px) rotateY(${x * 5}deg) rotateX(${-y * 5}deg) translateY(-3px)`;
-    });
-    card.addEventListener("mouseleave", () => {
-      card.style.transform = "";
-    });
-  });
-}
-
-// Formulaire : prépare un e-mail avec les informations saisies.
-const form = document.getElementById("contactForm");
-if (form) {
-  form.addEventListener("submit", event => {
-    event.preventDefault();
-    const data = new FormData(form);
-    const subject = encodeURIComponent("Message depuis le portfolio LUC-DEV");
-    const body = encodeURIComponent(
-      `Bonjour Luc,\n\n${data.get("message")}\n\nNom : ${data.get("name")}\nE-mail : ${data.get("email")}`
-    );
-    const hint = document.getElementById("formHint");
-    if (hint) hint.textContent = "Ouverture de votre application e-mail…";
-    window.location.href = `mailto:lucnekenarakotonindrina@gmail.com?subject=${subject}&body=${body}`;
-  });
-}
+(() => {
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const toggle=$('#menuToggle'),nav=$('#mainNav');
+if(toggle&&nav){toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Fermer le menu':'Ouvrir le menu');nav.classList.toggle('is-open',open);toggle.classList.toggle('is-open',open)});$$('#mainNav a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('is-open');toggle.classList.remove('is-open');toggle.setAttribute('aria-expanded','false')}))}
+const palettes={midnight:['#101827','#182338','#f2f5fb','#aab7c8','#75c9df','#9b9be8'],ocean:['#10232b','#193642','#eff8f8','#b1c8cc','#65c8d0','#78aee8'],forest:['#17251f','#22372c','#f1f5ef','#b9c9ba','#9bc6a5','#d2bd83'],lavender:['#211d30','#302943','#f7f3ff','#c8bfd8','#b5a5e8','#86c8d7'],sand:['#29251f','#3a332a','#faf5eb','#d0c4b0','#d4b98b','#9bb9b2'],rose:['#2c2027','#3b2a34','#fff4f7','#d3b9c5','#e5a9c0','#a7c5dc'],slate:['#202831','#303c48','#f3f6f8','#b9c3cc','#8db7c8','#b3a9df'],mint:['#142824','#203a34','#f0faf6','#b3cec4','#82cbb2','#a6c7e8'],amber:['#29251c','#3b3324','#fff9ed','#d1c4a8','#d6b56f','#9fc4d0'],plum:['#281f2b','#392b3e','#faf3fb','#cdbbd1','#c59bd0','#8eb9d7'],ice:['#182631','#243a49','#f3f9fc','#b9ccd6','#8fc8df','#a7b7ef'],graphite:['#202225','#303439','#f5f5f3','#c0c2c3','#9bc2c5','#c1b3a0']};
+const theme=$('#themeSelect');function setTheme(n){const c=palettes[n]||palettes.midnight;['--bg','--panel','--text','--muted','--cyan','--accent'].forEach((v,i)=>document.documentElement.style.setProperty(v,c[i]));if(theme)theme.value=n;try{localStorage.setItem('lucdev-theme',n)}catch(e){}}
+let saved='midnight';try{saved=localStorage.getItem('lucdev-theme')||saved}catch(e){}setTheme(saved);theme?.addEventListener('change',e=>setTheme(e.target.value));
+const dict={en:{'Accueil':'Home','Mes travaux':'Projects','À propos':'About','Mon CV':'My CV','Historique':'Experience','Contact':'Contact','École':'School','Université':'University','BONJOUR, JE SUIS':'HELLO, I\'M','Découvrir mes travaux':'Explore my work','Me contacter':'Contact me'}};
+function lang(n){const d=dict[n]||{};$$('#mainNav a').forEach(a=>{const k=a.textContent.trim();if(d[k])a.textContent=d[k]});$$('.hero-kicker').forEach(e=>{if(d[e.textContent.trim()])e.textContent=d[e.textContent.trim()]});document.documentElement.lang=n;try{localStorage.setItem('lucdev-lang',n)}catch(e){}const u=new URL(location.href);u.searchParams.set('lang',n);history.replaceState({},'',u)}
+const ls=$('#languageSelect');let l=new URLSearchParams(location.search).get('lang');if(!l){try{l=localStorage.getItem('lucdev-lang')}catch(e){}}l=l||'fr';if(ls){ls.value=l;lang(l);ls.addEventListener('change',e=>lang(e.target.value))}else lang(l);
+const typing=$('.typing-line');if(typing){const words=(typing.dataset.typing||'DevOps|Cybersecurity|Web development').split('|');const span=document.createElement('span');span.className='typing-word';typing.replaceChildren(span);let wi=0,ci=0,del=false;const tick=()=>{const w=words[wi];span.textContent=w.slice(0,ci);if(!del&&ci<w.length)ci++;else if(!del){del=true;return setTimeout(tick,1050)}else if(ci>0)ci--;else{del=false;wi=(wi+1)%words.length}setTimeout(tick,del?48:92)};tick()}
+const reveals=$$('.reveal');if('IntersectionObserver'in window){const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');ob.unobserve(e.target)}}),{threshold:.12});reveals.forEach(e=>ob.observe(e))}else reveals.forEach(e=>e.classList.add('visible'));
+const portrait=$('.mirror-portrait');let busy=false;window.addEventListener('scroll',()=>{if(!portrait||busy)return;busy=true;requestAnimationFrame(()=>{const r=portrait.getBoundingClientRect(),v=Math.max(-18,Math.min(18,(r.top-innerHeight/2)*-.035));portrait.style.setProperty('--portrait-shift',v+'px');busy=false})},{passive:true});const y=$('#year');if(y)y.textContent=new Date().getFullYear();
+})();

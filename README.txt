@@ -1,52 +1,20 @@
-LUC-DEV — Portfolio personnel (version enrichie)
-================================================
+LUC-DEV PORTFOLIO — VERSION PROFESSIONNELLE MULTIPAGES
 
-CONTENU
-- index.html : structure et textes du portfolio
-- style.css  : design responsive, effets visuels et animations
-- script.js  : menu mobile, année automatique, animations au scroll,
-               effet de profondeur au survol et formulaire e-mail
-- assets/    : images cybersécurité / développement web et vidéo DevOps
+Pages : index.html, travaux.html, apropos.html, cv.html, historique.html, contact.html
+Fichiers communs : style.css, script.js, dossier assets/
 
 NOUVEAUTÉS
-- Présentation enrichie : cybersécurité, DevOps et développement web
-- Services : sites vitrines, WordPress, applications web et mobiles,
-  infographie / PAO, notions de sécurité et réseaux
-- Galerie de 7 visuels avec animations d'apparition, zoom et effet 3D léger
-- Vidéo locale « Docker vs Kubernetes »
-- Logo typographique L. et visuel de profil intégrés en CSS : aucun fichier
-  de logo ou de portrait externe n'est nécessaire.
-- Adaptation mobile et prise en compte de l'option « réduire les animations ».
+- Menu hamburger animé avec rotation à 90° et couleur d'ouverture
+- Navigation multipages conservée
+- Effet de texte machine à écrire sur l'accueil
+- Portrait effet miroir avec reflet et léger mouvement au défilement
+- Typographie Georgia / Times New Roman, titres en gras
+- 12 palettes douces, mémorisées entre les pages
+- Sélecteur français / anglais avec paramètre ?lang=fr ou ?lang=en
+- Liens de l'école Le Petit Ange et de l'Université Akamasoa
+- Suppression du lien Facebook personnel LUC-DEV
 
-TESTER LE SITE
-1. Décompressez le ZIP.
-2. Ouvrez index.html dans un navigateur récent.
-3. Pour publier, envoyez le contenu du dossier à la racine de votre hébergement.
-   Conservez impérativement le dossier assets/ avec le site.
+École : https://www.facebook.com/sitraka.h.rasoanaivo
+Université : https://www.facebook.com/University.Akamasoa
 
-À VÉRIFIER AVANT PUBLICATION
-- Vérifier l'adresse de la page Facebook dans index.html.
-- Les visuels sont des illustrations de domaines, pas des preuves de projets clients.
-- Le formulaire ouvre l'application e-mail du visiteur ; il ne stocke pas les messages.
-- Les compétences et services affichés doivent correspondre à ce que vous pouvez
-  réellement proposer. Les mentions de cybersécurité sont formulées comme
-  sensibilisation et bonnes pratiques, pas comme un audit certifié.
-
-
-MISE À JOUR DES ÉLÉMENTS PERSONNELS
-- Logo officiel : assets/luc-dev-logo.png
-- Photo de profil : assets/luc-profile.png
-- Profil Facebook : https://www.facebook.com/profile.php?id=100060708171012
-Le lien Facebook est présent dans la navigation et dans la zone de contact.
-
-
-STRUCTURE MULTIPAGE
-- index.html : page Accueil
-- travaux.html : Mes travaux et expertises
-- apropos.html : À propos
-- cv.html : Mon CV
-- historique.html : Historique professionnel
-- contact.html : Contact
-Chaque lien du menu ouvre maintenant une page HTML distincte.
-Pour publier le site, téléversez tous les fichiers HTML, style.css, script.js
-et le dossier assets/ à la racine du dépôt GitHub.
+Publier tous les fichiers et le dossier assets/ à la racine du dépôt GitHub.
